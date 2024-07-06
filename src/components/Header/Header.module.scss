@@ -2,4 +2,39 @@
 
 .header {
     color: $blackColor;
+    font-family: var(--font-roboto);
+    display: flex;
+    justify-content: space-between;
+    background-color: $primaryColor;
+    color: $whiteColor;
+    padding: 0 2rem;
+
+    .navigation {
+        display: flex;
+        justify-content: flex-end;
+        flex: 0.5;
+        gap: 2rem;
+
+        nav {
+            ul {
+                list-style-type: none;
+                display: flex;
+                gap: 2rem;
+                margin-right: 2rem;
+            }
+        }
+    }
+
+    input {
+        min-width: 30rem;
+        margin: 1rem 0;
+        border-radius: 1rem;
+        border: none;
+        padding-left: 1rem;
+    }
+
+    > div {
+        display: flex;
+        align-items: center;
+    }
 }

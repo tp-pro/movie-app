@@ -19,7 +19,9 @@ const Header = () => {
             </div>
             <input type="text" placeholder="Recherche un titre ..." />
             <div>
-                <FontAwesomeIcon icon={faUser} />
+                <Link href="/profil">
+                    <FontAwesomeIcon icon={faUser} />
+                </Link>
             </div>
         </header>
     )

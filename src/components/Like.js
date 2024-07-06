@@ -1,12 +1,13 @@
 "use client"
 
-import { useState } from "react"
+import { PostContext } from "@/app/context/PostProvider"
+import { useContext } from "react"
 
-const Like = () => {
-    const [likes, setLikes] = useState(0)
+const Like = ({ post }) => {
+    const { setPostsLiked } = useContext(PostContext)
     return (
         <div>
-            <button onClick={() => setLikes((likes) => likes + 1)}>Like {likes} times</button>
+            <button onClick={() => setPostsLiked((postsLiked) => [...postsLiked, post])}>Like</button>
         </div>
     )
 }

@@ -1,4 +1,5 @@
 import Header from "@/components/Header/Header";
+import PostProvider from "./context/PostProvider";
 import "./globals.scss";
 import "@fortawesome/fontawesome-svg-core/styles.css"
 import { roboto, montserrat } from "@/fonts"
@@ -13,7 +14,11 @@ return (
     <html lang="en">
         <body className={`${roboto.variable} ${montserrat.variable}`}>
             <Header />
-            <main>{children}</main>
+            <main>
+                <PostProvider>
+                    {children}
+                </PostProvider>
+            </main>
         </body>
     </html>
 );

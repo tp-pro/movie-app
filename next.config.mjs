@@ -10,6 +10,15 @@ const __dirname = dirname(__filename);
 const nextConfig = {
     sassOptions: {
         includePaths: [path.join(__dirname, "src/styles")]
+    },
+    images: {
+        remotePatterns: [
+            {
+                protocol: "https",
+                hostname: "placehold.co",
+                pathname: "/**"
+            }
+        ]
     }
 };
 

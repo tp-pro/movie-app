@@ -1,9 +1,12 @@
 "use client"
 
+import { useState } from "react"
+
 const Like = () => {
+    const [likes, setLikes] = useState(0)
     return (
         <div>
-            <button onClick={() => console.log("like")}>Like</button>
+            <button onClick={() => setLikes((likes) => likes + 1)}>Like {likes} times</button>
         </div>
     )
 }

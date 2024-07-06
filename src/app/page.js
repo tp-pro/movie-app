@@ -1,10 +1,11 @@
-import styles from "./page.module.css";
 import MediaCard from "@/components/MediaCard/MediaCard";
+import styles from "./page.module.css";
 
 export default function Home() {
-  return (
-    <div className={styles.main}>
-      <MediaCard />
-    </div>
-  );
+    throw new Error("error")
+    return (
+        <div className={styles.main}>
+            <MediaCard />
+        </div>
+    );
 }
